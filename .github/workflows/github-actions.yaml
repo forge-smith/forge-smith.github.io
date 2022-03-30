@@ -1,7 +1,7 @@
 name: Build and Deploy
 defaults:
   run:
-    working-directory: src
+    working-directory: fsd-homepage
 on: [push]
 jobs:
   build-and-deploy:
@@ -20,4 +20,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: src/dist # The folder the action should deploy.
+          folder: fsd-homepage/dist # The folder the action should deploy.
